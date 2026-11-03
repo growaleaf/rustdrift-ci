@@ -1,0 +1,37 @@
+{
+  "name": "rustdrift-ci",
+  "version": "1.0.0",
+  "description": "Fail CI when your Rust version claims disagree: rust-toolchain.toml's channel, Cargo.toml's rust-version, every Dockerfile's FROM rust:X.Y, and every GitHub Actions workflow's toolchain: input all checked against each other.",
+  "license": "SEE LICENSE IN LICENSE",
+  "bin": {
+    "rustdrift-ci": "./cli.js"
+  },
+  "main": "cli.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growaleaf/rustdrift-ci.git"
+  },
+  "keywords": [
+    "rust",
+    "cargo",
+    "rust-toolchain",
+    "msrv",
+    "version",
+    "docker",
+    "github-actions",
+    "ci",
+    "continuous-integration",
+    "drift"
+  ],
+  "files": [
+    "cli.js",
+    "README.md",
+    "LICENSE"
+  ]
+}

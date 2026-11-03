@@ -1,0 +1,7 @@
+jobs:
+  test:
+    steps:
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.75"
+      - run: cargo test
